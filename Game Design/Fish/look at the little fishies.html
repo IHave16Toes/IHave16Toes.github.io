@@ -76,7 +76,7 @@
 			if(Math.random() > .5){
 				var badGuy = new sjs.Image("Images/fish2_right.png");
 				badGuy.type = "bad"
-				badGuy.setSize(100, 50)
+				badGuy.setSize(120, 60)
 				badGuy.friction = .0;
 				badGuy.noBounds = true;
 				badGuy.pushRight(speed);
@@ -85,7 +85,7 @@
 			} else {
 				var badGuy = new sjs.Image("Images/fish2_left.png")
 				badGuy.type = "bad"
-				badGuy.setSize(100, 50)
+				badGuy.setSize(120, 60)
 				badGuy.friction = .0;
 				badGuy.noBounds = true;
 				badGuy.pushLeft(speed);
@@ -115,6 +115,7 @@
 				} else {
 					x.destroy();
 					window.location = "gameover.html";
+					score = 0;
 				}
 				y.destroy();
 		});
